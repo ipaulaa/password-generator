@@ -5,6 +5,44 @@
     <title>Password Generator</title>
   </head>
   <body>
-    <h1>Password Generator</h1>
+    <div class="page">
+      <header>
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+      </header>
+      <form id="password-form">
+        <div class="input--container__number">
+          <label for="length">Length:</label>
+          <input
+            type="number"
+            min="8"
+            max="64"
+            value="15"
+            name="length"
+            id="length" />
+        </div>
+        <div class="input-container__checkbox">
+          <input type="checkbox" name="lowercase" id="lowercase" />
+          <label for="lowercase">Lowercase</label>
+        </div>
+        <div class="input-container__checkbox">
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">Uppercase</label>
+        </div>
+        <div class="input-container__checkbox">
+          <input type="checkbox" name="number" id="number" />
+          <label for="number">Number</label>
+        </div>
+        <div class="input-container__checkbox">
+          <input type="checkbox" name="symbol" id="symbol" />
+          <label for="symbol">Symbol</label>
+        </div>
+        <button type="submit">Generate passwords</button>
+      </form>
+      <footer>
+        <output id="password-1"></output>
+        <output class="password-2"></output>
+      </footer>
+    </div>
   </body>
 </html>
