@@ -18,7 +18,7 @@ body {
   padding: 115px 52px;
 
   background: #1f2937;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 h1 {
@@ -59,7 +59,8 @@ button:active {
   scale: 0.97;
 }
 
-.generate-btn {
+.generate-btn,
+.save-btn {
   padding: 9px 15px;
 
   border-radius: 6px;
@@ -91,6 +92,48 @@ button:active {
 .settings-btn:hover {
   color: #059669;
   border-color: #059669;
+}
+
+dialog {
+  padding: 30px 60px;
+
+  border: none;
+  border-radius: 12px;
+  background: #ecfdf5;
+
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+dialog::backdrop {
+  background: rgb(17 24 39 / 0.7);
+}
+
+label {
+  color: #2b283a;
+  font-weight: 700;
+}
+
+input[type="number"] {
+  padding: 5px;
+  background: #2b283a;
+  border-radius: 6px;
+  -moz-appearance: textfield;
+  margin-bottom: 25px;
+  color: #10b981;
+}
+
+input[type="checkbox"] {
+  appearance: revert;
+  accent-color: #10b981;
+  margin-bottom: 15px;
+}
+
+.save-btn {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 25px;
 }
 
 footer {

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@800&display=swap"
       rel="stylesheet" />
 
     <link rel="stylesheet" href="styles/style.css" />
@@ -27,7 +27,7 @@
           Settings
         </button>
       </main>
-      <dialog>
+      <dialog id="dialog">
         <form method="dialog" id="password-form">
           <div class="input--container__number">
             <label for="length">Length:</label>
@@ -55,14 +55,15 @@
             <input type="checkbox" name="symbol" id="symbol" />
             <label for="symbol">Symbol</label>
           </div>
-          <button type="submit">Save</button>
+          <button class="save-btn" type="submit">Save</button>
         </form>
       </dialog>
 
       <footer>
         <output class="output" id="password-1">>nfJjy!dDvR&ial</output>
-        <output class="output" id="password-2"> egxWij@veiPUwKdddddka </output>
+        <output class="output" id="password-2"> egxWij@veiPUwKdddddka</output>
       </footer>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
