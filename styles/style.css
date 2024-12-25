@@ -14,7 +14,7 @@ body {
 
 .page {
   width: 550px;
-  height: 550px;
+  min-height: 550px;
   padding: 115px 52px;
 
   background: #1f2937;
@@ -155,7 +155,7 @@ output {
   line-height: 2;
   font-weight: 500;
 
-  /* overflow: hidden; */
+  word-break: break-all;
   overflow-wrap: anywhere;
 }
 
