@@ -80,8 +80,7 @@ generateBtn.addEventListener("click", () => {
 });
 
 settingsBtn.addEventListener("click", () => dialog.showModal());
-passwordForm.addEventListener("submit", e => {
-  e.preventDefault();
+passwordForm.addEventListener("submit", () => {
   setFormData();
   dialog.close();
 });
