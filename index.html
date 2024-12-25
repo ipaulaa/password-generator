@@ -30,18 +30,14 @@
       <dialog id="dialog">
         <form method="dialog" id="password-form">
           <div class="input--container__number">
-            <label for="length">Length:</label>
+            <label for="size">Length:</label>
             <input
               type="number"
               min="8"
               max="64"
               value="15"
-              name="length"
-              id="length" />
-          </div>
-          <div class="input-container__checkbox">
-            <input type="checkbox" name="lowercase" id="lowercase" />
-            <label for="lowercase">Lowercase</label>
+              name="size"
+              id="size" />
           </div>
           <div class="input-container__checkbox">
             <input type="checkbox" name="uppercase" id="uppercase" />
@@ -60,10 +56,11 @@
       </dialog>
 
       <footer>
-        <output class="output" id="password-1">>nfJjy!dDvR&ial</output>
-        <output class="output" id="password-2"> egxWij@veiPUwKdddddka</output>
+        <output class="output" id="password-1"></output>
+        <output class="output" id="password-2"></output>
       </footer>
     </div>
+    <div id="copy" class="copy"></div>
     <script src="scripts/script.js"></script>
   </body>
 </html>
