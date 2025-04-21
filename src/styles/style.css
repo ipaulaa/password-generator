@@ -1,3 +1,122 @@
 body {
-  background-color: rebeccapurple;
+  color: #ecfdf5;
+  background-color: #273549;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header img {
+  width: 50px;
+}
+
+h1,
+h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  width: 550px;
+  margin: 0 auto 50px;
+  padding: 115px 52px;
+  border-radius: 12px;
+
+  background: #1f2937;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: -0.0625rem;
+}
+
+h2 span {
+  display: block;
+  color: #4adf86;
+}
+
+main > p {
+  margin: 10px 0 50px;
+  color: #d5d4d8;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+main div {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  gap: 24px;
+}
+
+.btns {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #2f3e53;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 2px solid #10b981;
+  border-radius: 6px;
+
+  color: #fff;
+  background: #10b981;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #10b981;
+  background: transparent;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.passwords p {
+  width: 210px;
+  min-height: 42px;
+  padding: 5px 10px;
+
+  border-radius: 6px;
+  background: #273549;
+  color: #55f991;
+
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  cursor: pointer;
+}
+
+.passwords p:active {
+  border: 1px solid #10b981;
 }
