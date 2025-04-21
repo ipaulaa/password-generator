@@ -120,3 +120,47 @@ main div {
 .passwords p:active {
   border: 1px solid #10b981;
 }
+
+dialog {
+  padding: 25px 50px;
+  border: none;
+  border-radius: 12px;
+
+  color: #1f2937;
+  background: #ecfdf5;
+}
+
+dialog::backdrop {
+  background: rgba(31 41 55 / 0.75);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input[type="number"] {
+  font-size: 1rem;
+  border: 2px solid #1f2937;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+input[type="checkbox"] {
+  all: revert;
+  width: 18px;
+  height: 18px;
+  accent-color: #10b981;
+}

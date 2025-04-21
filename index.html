@@ -28,8 +28,8 @@
       <h2>Generate a <span>random password</span></h2>
       <p>Never use an insecure password again.</p>
       <div class="btns">
-        <button class="btn">Generate Passwords</button>
-        <button class="btn">
+        <button id="generator-btn" class="btn">Generate Passwords</button>
+        <button id="settings-btn" class="btn">
           <ion-icon name="settings"></ion-icon>
           Settings
         </button>
@@ -40,6 +40,35 @@
         <p></p>
       </div>
     </main>
+
+    <dialog id="modal">
+      <form method="dialog">
+        <div>
+          <label for="length">Length:</label>
+          <input
+            id="length"
+            name="length"
+            type="number"
+            min="4"
+            value="15"
+            max="64" />
+        </div>
+
+        <div>
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">Uppercase</label>
+        </div>
+        <div>
+          <input type="checkbox" name="number" id="number" />
+          <label for="number">Number</label>
+        </div>
+        <div>
+          <input type="checkbox" name="symbol" id="symbol" />
+          <label for="symbol">Symbol</label>
+        </div>
+        <button class="btn" type="submit">Save</button>
+      </form>
+    </dialog>
 
     <script src="src/scripts/script.js"></script>
     <script
