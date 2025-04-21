@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=Karla:wght@800&display=swap"
+      rel="stylesheet" />
+
     <link
       rel="shortcut icon"
       href="src/images/favicon.ico"
@@ -14,7 +20,31 @@
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
   <body>
-    <h1>Password Generator</h1>
+    <div class="page">
+      <header>
+        <img src="src/images/lock.png" alt="Open green lock." />
+        <h1>Password Generator</h1>
+      </header>
+      <main>
+        <div>
+          <h2>Generate a <span>random password</span></h2>
+          <p>Never use an insecure password again.</p>
+        </div>
+        <div class="btns">
+          <button class="btn">Generate Passwords</button>
+          <button class="btn btn-outline">
+            <ion-icon name="settings"></ion-icon>
+            Settings
+          </button>
+        </div>
+
+        <div class="passwords">
+          <p></p>
+          <p></p>
+        </div>
+      </main>
+    </div>
+
     <script src="src/scripts/script.js"></script>
     <script
       type="module"
