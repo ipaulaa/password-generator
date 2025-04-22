@@ -35,6 +35,8 @@ main {
 
   background: #1f2937;
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+  position: relative;
 }
 
 h2 {
@@ -100,7 +102,7 @@ main div {
 
 .passwords p {
   width: 210px;
-  min-height: 42px;
+  height: 42px;
   padding: 5px 10px;
 
   border-radius: 6px;
@@ -111,14 +113,28 @@ main div {
   line-height: 2;
   font-weight: 500;
 
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
   cursor: pointer;
 }
 
-.passwords p:active {
-  border: 1px solid #10b981;
+.copy:empty {
+  display: none;
+}
+
+.copy {
+  width: fit-content;
+  padding: 8px 16px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  border: 2px solid #10b981;
+  border-radius: 6px;
+  color: #10b981;
 }
 
 dialog {
@@ -153,6 +169,7 @@ label {
 
 input[type="number"] {
   font-size: 1rem;
+  color: #2f3e53;
   border: 2px solid #1f2937;
   border-radius: 6px;
   padding: 3px;
