@@ -43,10 +43,13 @@ function randomChar(str) {
 }
 
 function copyPassword(e) {
-  navigator.clipboard.writeText(e.target.textContent).then(() => {
-    copyEl.textContent = "Copied!";
-    setTimeout(() => (copyEl.textContent = ""), 700);
-  }).catch(() => console.error("Not Allowed!"));
+  navigator.clipboard
+    .writeText(e.target.textContent)
+    .then(() => {
+      copyEl.textContent = "Copied!";
+      setTimeout(() => (copyEl.textContent = ""), 700);
+    })
+    .catch(() => console.error("Not Allowed!"));
 }
 
 const CHARACTERS = {
