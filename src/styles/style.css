@@ -2,6 +2,7 @@ body {
   color: #ecfdf5;
   background-color: #273549;
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 
 header {
